@@ -1,0 +1,18 @@
+.bookmarks {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .bookmarkButton {
+    background: none;
+    border: none;
+    color: #8ab4f8;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .bookmarkButton:hover {
+    color: #e8eaed;
+  }

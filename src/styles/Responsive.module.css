@@ -1,0 +1,40 @@
+/* Style dla tabletów */
+@media (max-width: 768px) {
+    .responsiveInput,
+    .responsiveButton {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .responsiveClock {
+      font-size: 36px;
+    }
+  
+    /* Możesz tu dodać więcej stylów specyficznych dla tabletów */
+  }
+  
+  /* Style dla telefonów komórkowych */
+  @media (max-width: 480px) {
+    .responsiveInput,
+    .responsiveButton {
+      padding: 6px;
+      font-size: 12px;
+    }
+  
+    .responsiveClock {
+      font-size: 24px;
+    }
+  
+    .responsiveBookmarks {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .responsiveBookmarkButton {
+      margin-bottom: 10px;
+      flex-basis: 100%;
+    }
+  
+    /* Możesz tu dodać więcej stylów specyficznych dla telefonów */
+  }
+  
