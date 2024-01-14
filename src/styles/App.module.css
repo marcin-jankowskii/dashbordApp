@@ -1,6 +1,27 @@
+body {
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
 .app {
     background-color: #121212;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
+    padding: 200px;
+  }
+
+@media (max-width: 600px) {
+  .app {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .app {
     padding: 20px;
   }
+}

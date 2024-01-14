@@ -8,7 +8,6 @@ import styles from './styles/App.module.css';
 const App: React.FC = () => {
     return (
         <div className={styles.app}>
-            <h1>Smart Dashboard</h1>
             <Clock />
             <SearchBar />
             <Weather />

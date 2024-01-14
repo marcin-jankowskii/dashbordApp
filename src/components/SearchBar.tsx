@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from '../styles/SearchBar.module.css';
 
 const SearchBar: React.FC = () => {
-    const [query, setQuery] = useState('');
+    const [query, setQuery] = useState<string>('');
 
     const handleSearch = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();

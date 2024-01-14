@@ -14,8 +14,9 @@ const Clock: React.FC = () => {
     }, []);
 
     return (
-        <div className={`${styles.clock} ${responsiveStyles.responsiveClock}`}>
-            {currentTime.toLocaleTimeString()}
+        <div className={styles.clock}>
+            <p className={styles.time}>{currentTime.toLocaleTimeString()}</p>
+            <p className={styles.date}>{currentTime.toLocaleDateString()}</p>
         </div>
     );
 };

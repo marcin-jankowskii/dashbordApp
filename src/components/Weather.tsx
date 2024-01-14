@@ -14,7 +14,7 @@ interface WeatherData {
 const Weather: React.FC = () => {
     const [weather, setWeather] = useState<WeatherData | null>(null);
     const apiKey = '0139bd3f676e2ab90449be48e5aa00de';
-    const location = 'Gdańsk'; // Możesz pozwolić użytkownikom wybierać lokalizację
+    const location = 'Gdańsk'; 
 
     useEffect(() => {
         const fetchWeather = async () => {
@@ -26,14 +26,14 @@ const Weather: React.FC = () => {
         fetchWeather();
     }, [location, apiKey]);
 
-    if (!weather) return <div>Loading...</div>;
+    if (!weather) return <div className={styles.weatherContainer}>Loading...</div>;
 
     return (
-        <div className={styles.weather}>
-            <h2>Pogoda w {weather.name}</h2>
-            <p>Temperatura: {weather.main.temp}°C</p>
-            <p>Stan: {weather.weather[0].main}</p>
-            {/* Można dodać więcej szczegółów */}
+        <div className={styles.weatherContainer}>
+            <div className={styles.weatherDetails}>
+                <div>{weather.weather[0].main}</div>
+                <div>{weather.main.temp}°C</div>
+            </div>
         </div>
     );
 };

@@ -9,17 +9,12 @@ const Bookmarks: React.FC = () => {
     ];
 
     return (
-        <div className={styles.bookmarks}>
-            <h3>Zakładki</h3>
-            <ul className={styles.bookmarkList}>
-                {bookmarks.map((bookmark, index) => (
-                    <li key={index}>
-                        <a href={bookmark.url} target="_blank" rel="noopener noreferrer">
-                            {bookmark.name}
-                        </a>
-                    </li>
-                ))}
-            </ul>
+        <div className={styles.bookmarksContainer}>
+            {bookmarks.map((bookmark, index) => (
+                <a key={index} href={bookmark.url} className={styles.bookmark} target="_blank" rel="noopener noreferrer">
+                    {bookmark.name}
+                </a>
+            ))}
         </div>
     );
 };

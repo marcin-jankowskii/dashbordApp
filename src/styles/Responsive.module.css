@@ -1,4 +1,4 @@
-/* Style dla tabletów */
+/* Tablets */
 @media (max-width: 768px) {
     .responsiveInput,
     .responsiveButton {
@@ -10,10 +10,9 @@
       font-size: 36px;
     }
   
-    /* Możesz tu dodać więcej stylów specyficznych dla tabletów */
   }
   
-  /* Style dla telefonów komórkowych */
+  /* Smartphones */
   @media (max-width: 480px) {
     .responsiveInput,
     .responsiveButton {
